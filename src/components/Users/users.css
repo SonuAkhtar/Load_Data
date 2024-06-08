@@ -1,0 +1,45 @@
+.users__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.users__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #006989;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #005c78;
+  border-radius: 2rem;
+  color: #005c78;
+  background-color: white;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  border-radius: inherit;
+  border-color: inherit;
+  color: gray;
+  background-color: lightgray;
+}
